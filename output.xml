@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.7.5 on win32)" generated="20220615 19:49:50.999" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\facun\.vscode\extensions\robocorp.robotframework-lsp-0.48.2\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${GMAIL_ACCOUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220615 19:50:45.409" endtime="20220615 19:50:45.411"/>
+</kw>
+<kw name="Get Email">
+<kw name="Get Secret" library="RPA.Robocorp.Vault">
+<var>${credentials}</var>
+<arg>credentials</arg>
+<doc>Read a secret from the configured source, e.g. Robocorp Vault,
+and return it as a ``Secret`` object.</doc>
+<status status="PASS" starttime="20220615 19:51:58.277" endtime="20220615 19:52:00.065"/>
+</kw>
+<return>
+<value>${credentials}[GMAIL_ACCOUNT]</value>
+<status status="PASS" starttime="20220615 19:52:00.065" endtime="20220615 19:52:00.065"/>
+</return>
+<status status="PASS" starttime="20220615 19:51:58.276" endtime="20220615 19:52:00.066"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Get Email</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220615 19:52:06.458" endtime="20220615 19:52:06.459"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Get Email}</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20220615 19:52:18.940" level="FAIL">Variable '${Get Email}' not found.</msg>
+<status status="FAIL" starttime="20220615 19:52:18.939" endtime="20220615 19:52:18.940"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Get Email}</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20220615 19:52:21.620" level="FAIL">Variable '${Get Email}' not found.</msg>
+<status status="FAIL" starttime="20220615 19:52:21.619" endtime="20220615 19:52:21.620"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${URL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220615 20:08:28.823" endtime="20220615 20:08:28.824"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${GMAIL_ACCOUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220615 20:08:37.928" endtime="20220615 20:08:37.929"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${GMAIL_PASSWORD}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220615 20:08:46.271" endtime="20220615 20:08:46.271"/>
+</kw>
+<status status="PASS" starttime="20220615 19:49:51.046" endtime="20220615 20:31:42.546"/>
+</kw>
+<status status="PASS" starttime="20220615 19:49:51.046" endtime="20220615 20:31:42.546"/>
+</test>
+<status status="PASS" starttime="20220615 19:49:51.001" endtime="20220615 20:31:42.547"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
